@@ -25,11 +25,17 @@ import com.foxinmy.weixin4j.wxa.api.SubscribeMessageApi;
 public class WeixinAppFacade {
 
 	private final LoginApi loginApi;
+
 	private final QrCodeApi qrCodeApi;
+
 	private final TemplateApi templateApi;
+
 	private final TemplateMessageApi templateMessageApi;
+
 	private final CustomMessageApi customMessageApi;
+
 	private final SecCheckApi secCheckApi;
+
 	private final SubscribeMessageApi subscribeMessageApi;
 
 	/**
@@ -155,7 +161,8 @@ public class WeixinAppFacade {
 	/**
 	 * 获取订阅消息相关的 API。
 	 *
-	 * @return 模板消息相关的 API。
+	 * @return 订阅消息相关的 API。
+	 * @since 1.9
 	 */
 	public SubscribeMessageApi getSubscribeMessageApi() {
 		return subscribeMessageApi;
